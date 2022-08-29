@@ -131,7 +131,7 @@
                 style="@style/RoundedSelectableButton"
 
                 android:nextFocusLeft="@id/search_select_asian"
-                android:nextFocusRight="@id/search_select_documentaries"
+                android:nextFocusRight="@id/search_select_documentaries" 
                 android:text="@string/cartoons" />
 
             <com.google.android.material.button.MaterialButton

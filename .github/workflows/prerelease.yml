@@ -20,8 +20,8 @@ jobs:
       id: generate_token
       uses: tibdex/github-app-token@v1
       with:
-        app_id: ${{ secrets.GH_APP_ID }}
-        private_key: ${{ secrets.GH_APP_KEY }}
+        app_id: ${{ secrets.MY_TOKEN || github.token }}
+        private_key: ${{ secrets.GH_APP_KEY || github.token}}
         repository: "recloudstream/secrets"
     - uses: actions/checkout@v2
     - name: Set up JDK 11
